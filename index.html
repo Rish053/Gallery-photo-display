@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA_Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+        <title>Gallery</title>
+    </head>
+    <body>
+        <div class="nav-bar">
+            <div class="mobile">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul class="mobile-nav">
+                <li class="active">Gallery</li>
+                <li>Products</li>
+                <li>Services</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="container">
+            <h1>Concept</h1>
+            <div class="imgs">
+                <div class="row_1">
+                    <div class="img-box">
+                        <div class="cover">
+                            <a href="images/gallery-item1.jpg"><i class="fa fa-expand"></i></a>
+                        </div>
+                        <img src="images/gallery-item1.jpg" alt="">
+                        <h3>Etiam sed felis</h3>
+                    </div>
+                    <div class="img-box">
+                        <div class="cover">
+                            <a href="images/gallery-item2.jpg"><i class="fa fa-expand"></i></a>
+                        </div>
+                        <img src="images/gallery-item2.jpg" alt="">
+                        <h3>Nulla sagittis</h3>
+                    </div>
+                    <div class="img-box">
+                        <div class="cover">
+                            <a href="images/gallery-item3.jpg"><i class="fa fa-expand"></i></a>
+                        </div>
+                        <img src="images/gallery-item3.jpg" alt="">
+                        <h3>Quisque lacinia</h3>
+                    </div>
+                    <div class="img-box">
+                        <div class="cover">
+                            <a href="images/gallery-item4.jpg"><i class="fa fa-expand"></i></a>
+                        </div>
+                        <img src="images/gallery-item4.jpg" alt="">
+                        <h3>Venenatis</h3>
+                    </div>
+                    <div class="img-box">
+                        <div class="cover">
+                            <a href="images/gallery-item5.jpg"><i class="fa fa-expand"></i></a>
+                        </div>
+                        <img src="images/gallery-item5.jpg" alt="">
+                        <h3>Sed sed nisi</h3>
+                    </div>
+                </div>
+                <div class="row_2">
+                    <div class="img-box">
+                        <div class="cover">
+                            <a href="images/gallery-item6.jpg"><i class="fa fa-expand"></i></a>
+                        </div>
+                        <img src="images/gallery-item6.jpg" alt="">
+                        <h3>Modern</h3>
+                    </div>
+                    <div class="img-box">
+                        <div class="cover">
+                            <a href="images/gallery-item7.jpg"><i class="fa fa-expand"></i></a>
+                        </div>
+                        <img src="images/gallery-item7.jpg" alt="">
+                        <h3>Elegant</h3>
+                    </div>
+                    <div class="img-box">
+                        <div class="cover">
+                            <a href="images/gallery-item8.jpg"><i class="fa fa-expand"></i></a>
+                        </div>
+                        <img src="images/gallery-item8.jpg" alt="">
+                        <h3>HTML5 CSS3</h3>
+                    </div>
+                    <div class="img-box">
+                        <div class="cover">
+                            <a href="images/gallery-item9.jpg"><i class="fa fa-expand"></i></a>
+                        </div>
+                        <img src="images/gallery-item9.jpg" alt="">
+                        <h3>New Design</h3>
+                    </div>
+                </div>
+                <div class="row_3">
+                    <div class="img-box">
+                        <div class="cover">
+                            <a href="images/gallery-item10.jpg"><i class="fa fa-expand"></i></a>
+                        </div>
+                        <img src="images/gallery-item10.jpg" alt=""
+                        ><h3>Download</h3>
+                    </div>
+                    <div class="img-box">
+                        <div class="cover">
+                            <a href="images/gallery-item11.jpg"><i class="fa fa-expand"></i></a>
+                        </div>
+                        <img src="images/gallery-item11.jpg" alt=""
+                        ><h3>Responsive</h3>
+                    </div>
+                    <div class="img-box">
+                        <div class="cover">
+                            <a href="images/gallery-item12.jpg"><i class="fa fa-expand"></i></a>
+                        </div>
+                        <img src="images/gallery-item12.jpg" alt=""
+                        ><h3>Template</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright © 2016 Your Company Name</p>
+        </footer>
+    </body>
+</html>
+
+<script>
+    $('.nav-bar').click(function() {
+        $('.mobile-nav').prependTo('body').toggle();
+    });
+    $('.img-box').hover(function() {
+        $(this).children('.cover').css('display','block');
+    },function() {
+        $(this).children('.cover').css('display','none');
+    });
+    $('.imgs').magnificPopup({
+        delegate:'a',
+        type: 'image',
+        gallery: {
+          enabled: true 
+        }
+    });
+</script>
