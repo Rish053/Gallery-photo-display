@@ -2,4 +2,4 @@
 
 Demo
 
-https://sarahxoxo.github.io/weeklychallenge03/
+https://sarahxoxo.github.io/Gallery-photo-display/
