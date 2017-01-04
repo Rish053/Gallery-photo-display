@@ -1,4 +1,4 @@
-# weeklychallenge03
+# A Simple Gallery Website
 
 Demo
 
