@@ -4,7 +4,8 @@ html, body {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1;
-    background-color: #EEEEEE;
+    background-color: powderblue;
+    opacity: 0.3;
 }
 a{
     color: black;
